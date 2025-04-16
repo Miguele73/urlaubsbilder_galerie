@@ -387,6 +387,71 @@ List<ListOfJourneys> listOfJourneys = [
     imageDate: '05.02.2024',
     description: 'Oranjestaadt',
   ),
+  ListOfJourneys(
+    imagePath: 'assets/Kreuzfahrt/Charlie.JPG',
+    imageTitle: 'DomRep',
+    imageDate: '07.02.2024',
+    description: 'Santo Domingo de Dom. Rep..',
+    vacationPicturePaths: [
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Charlie.JPG',
+        name: 'Charlie',
+        date: '07.02.2024',
+        description:
+            'Auch Charlie Chaplin ist in der Karibik unterwegs. Hier in Santo Domingo.',
+      ),
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Park.JPG',
+        name: 'Promipark',
+        date: '04.02.2024',
+        description:
+            'Der Promipark in Santo Domingo ist ein beliebtes Ziel für Touristen.',
+      ),
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Stadtmuseum Santo Domingo.JPG',
+        name: 'DomRep',
+        date: '04.02.2024',
+        description:
+            'Das Stadtmuseum von Santo Domingo. Rundherum tobt das Leben.',
+      ),
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Salome.JPG',
+        name: 'DomRep',
+        date: '04.02.2024',
+        description:
+            'Statue für eine bekannte Schriftstellerin aus dem 19. Jahrhundert.',
+      ),
+    ],
+  ),
+  ListOfJourneys(
+    imagePath: 'assets/Kreuzfahrt/Guadeloupe.JPG',
+    imageTitle: 'Guadeloupe',
+    imageDate: '30.01.2024',
+    description: 'Besuch auf Guadeloupe',
+    vacationPicturePaths: [
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Guadeloupe.JPG',
+        name: 'Guadeloupe',
+        date: '30.01.2024',
+        description:
+            'Ein Besuch auf Guadeloupe einer leider sehr schmutzigen Insel.',
+      ),
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Graffiti.JPG',
+        name: 'Graffitti',
+        date: '30.01.2024',
+
+        description: 'Graffitti ist ein beliebtes Kunstwerk auf Guadeloupe.',
+      ),
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Eingeborener.JPG',
+        name: 'Guadeloupe',
+        date: '30.01.2024',
+        description:
+            'Einheimischer Trommler in Bronze gegossen. Er ist ein Symbol für die Kultur und Traditionen der Karibik.',
+      ),
+    ],
+  ),
 ];
 
 class ListOfJourneys {
