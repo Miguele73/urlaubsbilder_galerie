@@ -319,7 +319,7 @@ List<ListOfJourneys> listOfJourneys = [
     ],
   ),
   ListOfJourneys(
-    imagePath: 'assets/Kreuzfahrt/IMG_0245.JPG',
+    imagePath: 'assets/Kreuzfahrt/Curacao.JPG',
     imageTitle: 'Curacao/ Karibik',
     imageDate: '2023-11-11',
     description: 'Curacao, hier könnte man leben.',
@@ -339,7 +339,7 @@ List<ListOfJourneys> listOfJourneys = [
             'Curacao ist eine wunderschöne Karibikinsel mit vielen bunten Häusern und einer tollen Atmosphäre. Dushi ist ein Wort, das in der Papiamento-Sprache von Curacao verwendet wird und so viel wie "süß" oder "schön" bedeutet.',
       ),
       VacationPicture(
-        path: 'assets/Kreuzfahrt/Blick auf die Häuser.JPG',
+        path: 'assets/Kreuzfahrt/Waterview.JPG',
         name: 'Curacao',
         date: '04.02.2024',
         description:
@@ -352,6 +352,40 @@ List<ListOfJourneys> listOfJourneys = [
         description: 'Diese Schriftzüge begegnen uns überall in der Karibik',
       ),
     ],
+  ),
+  ListOfJourneys(
+    vacationPicturePaths: [
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Oranjestaadt Hafen.JPG',
+        name: 'Oranjestaadt',
+        date: '05.02.2024',
+        description: 'Der Hafen von Oranjestaadt.',
+      ),
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Virgin.JPG',
+        name: 'Oranjestaadt',
+        date: '05.02.2024',
+        description: 'Mit diesem Boot möchte ich auch noch mal fahren',
+      ),
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/Touribus.JPG',
+        name: 'Bimmelbahn',
+        date: '05.02.2024',
+        description:
+            'Aber für den Anfang macht es auch die Bimmelbahn...natürlich farbenfroh wie die gesamte Karibik',
+      ),
+      VacationPicture(
+        path: 'assets/Kreuzfahrt/UBootLuke.JPG',
+        name: 'Uboot',
+        date: '05.02.2024',
+        description:
+            'Mit dem U-Boot in über 40 Meter Tiefe. Ein Wahnsinns Erlebnis',
+      ),
+    ],
+    imagePath: 'assets/Kreuzfahrt/Oranjestaadt Hafen.JPG',
+    imageTitle: 'Oranjestaadt',
+    imageDate: '05.02.2024',
+    description: 'Oranjestaadt',
   ),
 ];
 
