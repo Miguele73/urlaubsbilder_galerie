@@ -35,7 +35,38 @@ class PicturePage extends StatelessWidget {
     return journey.vacationPicturePaths.map((vacationPicture) {
       return GestureDetector(
         onTap: () {
-          _showImageDetailsDialog(context, vacationPicture);
+          showDialog(
+            context: context,
+            builder: (context) {
+              return AlertDialog(
+                title: Text('Details zum Bild'),
+                content: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Image.asset(
+                      vacationPicture.path,
+                      width: 150,
+                      height: 100,
+                      fit: BoxFit.cover,
+                    ),
+                    const SizedBox(height: 8.0),
+                    Text('Datum: ${vacationPicture.date}'),
+                    const SizedBox(height: 8.0),
+                    Text(' ${vacationPicture.description}'),
+                  ],
+                ),
+                actions: <Widget>[
+                  TextButton(
+                    child: const Text('Schließen'),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],
+              );
+            },
+          );
         },
         child: Card(
           color: const Color(0xFF66A5AD),
@@ -54,50 +85,5 @@ class PicturePage extends StatelessWidget {
         ),
       );
     }).toList();
-  }
-
-  void _showImageDetailsDialog(BuildContext context, imagePath) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Details zum Bild'),
-          content: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text('Datum: ${imagePath.date}'),
-              const SizedBox(height: 8.0),
-              Text('Beschreibung: ${imagePath.description}'),
-            ],
-          ),
-          actions: <Widget>[
-            TextButton(
-              child: const Text('Schließen'),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
-    );
-    // List<Widget> _buildHolidayPictures() {
-    //   return journey.vacationPicturePaths.map((imagePath) {
-    //     return Card(
-    //       color: Color(0xFF66A5AD),
-    //       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-    //       child: Padding(
-    //         padding: const EdgeInsets.all(8.0),
-    //         child: Image.asset(
-    //           imagePath,
-    //           width: 150,
-    //           height: 100,
-    //           fit: BoxFit.cover,
-    //         ),
-    //       ),
-    //     );
-    //   }).toList();
-    // }
   }
 }
